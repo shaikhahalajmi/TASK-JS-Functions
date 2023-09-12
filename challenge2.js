@@ -8,7 +8,10 @@
  */
 function greet(name) {
   // Your code here
+  console.log("Hello "+ name);
 }
+
+greet("shaikhah");
 
 /**
  * isOdd(n):
@@ -21,6 +24,17 @@ function greet(name) {
  */
 function isOdd(n) {
   // Your code here
+  let x = false;
+  if(n%2!=0)
+    x = true;
+  return x;
+      
+}
+
+if(isOdd(4)){
+  console.log("the number is odd");
+}else{
+  console.log("the number is even");
 }
 
 /**
@@ -34,8 +48,21 @@ function isOdd(n) {
  */
 function oddsSmallerThan(n) {
   // Your code here
-}
+  let x = 0;
 
+  if( n%2==0)//even
+  {
+    x = n/2;
+  
+  }
+  else {
+    x= ((n-1)/2)  ;
+  }
+  
+  return x;
+  
+}
+console.log(" the number of ODD numbers smaller than 15 is " + oddsSmallerThan(7));
 /**
  * squareOrDouble(n):
  * - receives a number n
@@ -48,4 +75,15 @@ function oddsSmallerThan(n) {
  */
 function squareOrDouble(n) {
   // Your code here
+  let x =0;
+  if( n%2==0)//even
+  {
+    x = n *2;
+  }
+  else{
+    x = n**2;
+  }
+  return x;
 }
+
+console.log(" the value of the function is " + squareOrDouble(9));
